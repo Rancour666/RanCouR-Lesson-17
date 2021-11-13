@@ -151,6 +151,7 @@ main {
 	display: flex;
 	align-items: start;
 	justify-content: space-between;
+	row-gap: 20px;
 }
 .top-header__column{
 	display: flex;
@@ -179,7 +180,7 @@ main {
 .info-hours__title {
 	text-transform: uppercase;
 }
-.info-hours__schedule {}
+
 .top-header__call {
 	font-weight: 700;
 	font-size: 12px;
@@ -454,10 +455,7 @@ main {
 	max-width: 100%;
 	}
 	.top-header {
-		display: flex;
 		flex-wrap: wrap;
-		row-gap: 20px;
-
 	}
 	.top-header__column{
 		flex: 1 1 100%;
@@ -571,9 +569,7 @@ main {
 }
 
 
-.content-who {
-	
-}
+
 .content-who__title {
 	font-family: 'Roboto';
 	font-weight: 700;
@@ -646,6 +642,12 @@ main {
 		border:none;
 		margin: -40px 0px -120px 0px;
 		}
+		.content-who__title,
+		.content-who__text,
+		.content-who__subtitle{
+			text-shadow: 1px 1px 1px #000;
+		}
+
 	.who__body:after {
 		content:'';
 		position: absolute;
@@ -653,9 +655,17 @@ main {
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(93, 98, 181, 0.75);
+		animation: bg 8s infinite alternate;
 		overflow: hidden;
 		border-radius: 40px;
+		}
+		@keyframes bg {
+			0%{
+				background-color: rgba(93, 98, 181, 0.95);
+			}
+			100%{
+				background-color: rgba(93, 98, 181, 0);
+			}
 		}
 		.content-who__text{
 			margin: 0px 0px 0px 0px;
