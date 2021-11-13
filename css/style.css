@@ -746,6 +746,11 @@ main {
 		align-items: stretch;
 	}
 }
+@media (min-width: 1441px) {
+	.nemo:before{
+		background: url('../img/nemo/puppy.png') 20% 100% no-repeat, url('../img/nemo/blob-2.png') 0 0 no-repeat, url('../img/nemo/circles.png') 0 122px no-repeat, url('../img/nemo/line.png') 90% 0 no-repeat;
+	}
+}
 
 
 
